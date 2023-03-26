@@ -1,0 +1,168 @@
+{
+  "statements": [
+    [
+      {
+        "statement": "어려운 문제여도 풀이과정을 보면 이해할 수 있을 것 같다.",
+        "type": "interest"
+      },
+      {
+        "statement": "수학은 내가 좋아하는 과목 중 하나이다.",
+        "type": "positive"
+      },
+      {
+        "statement": "나는 수학 문제를 풀 때 공책이나 이면지에 푼다.",
+        "type": "organized"
+      },
+      {
+        "statement": "역사나 세계사가 재미있다.",
+        "type": "macroscopic"
+      },
+      {
+        "statement": "나는 수학에 재능이 있는 것 같다.",
+        "type": "interest"
+      },
+      {
+        "statement": "수학 문제를 푸는 것이 즐거울 때가 있다.",
+        "type": "positive"
+      }
+    ],
+    [
+      {
+        "statement": "문제를 풀 때 내가 쓴 풀이과정을 알아보기가 어렵다.",
+        "type": "organized"
+      },
+      {
+        "statement": "나는 머리가 좋다고 생각한 적이 많다.",
+        "type": "interest"
+      },
+      {
+        "statement": "수학 학원에 가는 것이 싫다.",
+        "type": "positive"
+      },
+      {
+        "statement": "아는 문제임에도 실수로 틀리는 경우가 많은 편이다.",
+        "type": "organized"
+      },
+      {
+        "statement": "장편소설을 좋아한다.",
+        "type": "macroscopic"
+      },
+      {
+        "statement": "수학 문제가 어렵게 느껴질 때가 많다.",
+        "type": "interest"
+      }
+    ],
+    [
+      {
+        "statement": "공부하다가도 쉽게 집중력을 잃곤 한다.",
+        "type": "positive"
+      },
+      {
+        "statement": "언젠가 풀어본 문제인데 풀지 못할 때가 있다.",
+        "type": "organized"
+      },
+      {
+        "statement": "쉬운 문제를 여러 개 푸는 것보다 어려운 문제를 하나 푸는 것이 더 좋다.",
+        "type": "interest"
+      },
+      {
+        "statement": "억지로 수학 공부를 할 때가 많다.",
+        "type": "positive"
+      },
+      {
+        "statement": "풀고 나서 검산과 검토를 반드시 하는 편이다.",
+        "type": "organized"
+      },
+      {
+        "statement": "드라마는 무조건 1화부터 시작하지 않으면 보지 않는다.",
+        "type": "macroscopic"
+      }
+    ],
+    [
+      {
+        "statement": "생각할 필요가 있는 문제가 흥미롭게 느껴진다.",
+        "type": "interest"
+      },
+      {
+        "statement": "공부를 잘하고 싶은 마음이 딱히 없다.",
+        "type": "positive"
+      },
+      {
+        "statement": "문제를 풀 때 어디까지 풀 것인지 계획하고 푸는 편이다.",
+        "type": "organized"
+      },
+      {
+        "statement": "복습을 한다.",
+        "type": "interest"
+      },
+      {
+        "statement": "공부를 왜 해야 하는지 잘 모르겠다.",
+        "type": "positive"
+      },
+      {
+        "statement": "숙제를 꾸준히 하는 것보다는 검사 직전에 몰아서 하는 편이다.",
+        "type": "organized"
+      }
+    ],
+    [
+      {
+        "statement": "새로운 것을 알게 됐을 때 기존에 알던 것과 연관시켜 이해한다.",
+        "type": "macroscopic"
+      },
+      {
+        "statement": "수학을 잘 하는 것은 재능 같다.",
+        "type": "interest"
+      },
+      {
+        "statement": "수학에 흥미를 붙이기 힘들다.",
+        "type": "positive"
+      },
+      {
+        "statement": "수학을 공부하는 시간을 정해놓고 있다.",
+        "type": "organized"
+      },
+      {
+        "statement": "새로운 개념을 배우면 무엇이 바탕이 되는지 궁금하다.",
+        "type": "macroscopic"
+      },
+      {
+        "statement": "논리 퍼즐, 퀴즈 같은 것들이 재미있다.",
+        "type": "interest"
+      }
+    ],
+    [
+      {
+        "statement": "시간이 더 들더라도 풀던 문제는 풀고 싶다.",
+        "type": "positive"
+      },
+      {
+        "statement": "문제를 풀 때 어떻게 풀어나갈 것인지 생각하고 식을 쓰기 시작한다.",
+        "type": "organized"
+      },
+      {
+        "statement": "문제에 사용되는 공식들을 유도할 수 있다.",
+        "type": "macroscopic"
+      },
+      {
+        "statement": "나는 결국 공부를 잘 할 것이라는 자신감이 있다.",
+        "type": "interest"
+      },
+      {
+        "statement": "고통스러운 것보다 성취감이 큰 문제들이 있다.",
+        "type": "positive"
+      },
+      {
+        "statement": "공식을 대입하는 것보다 개념 이해가 문제풀이에 중요하다.",
+        "type": "macroscopic"
+      },
+      {
+        "statement": "문제를 풀다가 막히면 푸는 것을 포기한다",
+        "type": "positive"
+      },
+      {
+        "statement": "맞춘 문제의 풀이를 중간부터 보더라도 이해할 수 있다.",
+        "type": "macroscopic"
+      }
+    ]
+  ]
+}
