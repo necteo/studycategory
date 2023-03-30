@@ -3,7 +3,7 @@ import Progress from "./main/Progress";
 import Questions from "./main/Questions";
 import Tips from "./main/Tips";
 
-const MainApp = () => {
+const MainApp = ({ score, setScore }) => {
   return (
     <div className="main-wrapper">
       <main className="q-pt">

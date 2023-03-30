@@ -1,132 +1,40 @@
+import RadioGroup from "./radio/RadioGroup";
+import Radio from "./radio/Radio";
+
 const Question = ({ statement }) => {
+  // 질문 하나
+  const name = "decision";
+  const value = {
+    agree_max: 4,
+    agree: 3,
+    normal: 2,
+    disagree: 1,
+    disagree_max: 0,
+  };
+
   return (
     <div data-v-e858e9fa="" className="question">
+      {/* 질문 */}
       <div data-v-e858e9fa="" className="statement">
         <span data-v-e858e9fa="" id="stmt_fwp45lcsuw">
           {statement.statement}
         </span>
       </div>
+      {/* 라디오 버튼 */}
+      <RadioGroup>
+        <Radio option={"매우 그렇다"} value={value["agree_max"]} name={name} />
+        <Radio option={"그렇다"} value={value["agree"]} name={name} />
+        <Radio option={"보통이다"} value={value["normal"]} name={name} />
+        <Radio option={"그렇지 않다"} value={value["disagree"]} name={name} />
+        <Radio
+          option={"매우 그렇지 않다"}
+          value={value["disagree_max"]}
+          name={name}
+        />
+      </RadioGroup>
       <div>
-        <div
-          data-v-e858e9fa=""
-          aria-labelledby="stmt_fwp45lcsuw"
-          role="radiogroup"
-          className="decision"
-        >
-          <div data-v-e858e9fa="" className="caption agree">
-            동의
-          </div>
-          <div data-v-e858e9fa="" className="options">
-            <div
-              data-v-e858e9fa=""
-              aria-checked="false"
-              aria-label="agree max"
-              data-index="0"
-              tabIndex="0"
-              role="radio"
-              className="option agree max"
-            >
-              <span
-                data-v-e858e9fa=""
-                aria-hidden="true"
-                className="far fa-check"
-              ></span>
-            </div>
-            <div
-              data-v-e858e9fa=""
-              aria-checked="false"
-              aria-label="agree med"
-              data-index="1"
-              tabIndex="-1"
-              role="radio"
-              className="option agree med"
-            >
-              <span
-                data-v-e858e9fa=""
-                aria-hidden="true"
-                className="far fa-check"
-              ></span>
-            </div>
-            <div
-              data-v-e858e9fa=""
-              aria-checked="false"
-              aria-label="agree min"
-              data-index="2"
-              tabIndex="-1"
-              role="radio"
-              className="option agree min"
-            >
-              <span
-                data-v-e858e9fa=""
-                aria-hidden="true"
-                className="far fa-check"
-              ></span>
-            </div>
-            <div
-              data-v-e858e9fa=""
-              aria-checked="false"
-              aria-label="neutral"
-              data-index="3"
-              tabIndex="-1"
-              role="radio"
-              className="option neutral"
-            >
-              <span
-                data-v-e858e9fa=""
-                aria-hidden="true"
-                className="far fa-check"
-              ></span>
-            </div>
-            <div
-              data-v-e858e9fa=""
-              aria-checked="false"
-              aria-label="disagree min"
-              data-index="4"
-              tabIndex="-1"
-              role="radio"
-              className="option disagree min"
-            >
-              <span
-                data-v-e858e9fa=""
-                aria-hidden="true"
-                className="far fa-check"
-              ></span>
-            </div>
-            <div
-              data-v-e858e9fa=""
-              aria-checked="false"
-              aria-label="disagree med"
-              data-index="5"
-              tabIndex="-1"
-              role="radio"
-              className="option disagree med"
-            >
-              <span
-                data-v-e858e9fa=""
-                aria-hidden="true"
-                className="far fa-check"
-              ></span>
-            </div>
-            <div
-              data-v-e858e9fa=""
-              aria-checked="false"
-              aria-label="disagree max"
-              data-index="6"
-              tabIndex="-1"
-              role="radio"
-              className="option disagree max"
-            >
-              <span
-                data-v-e858e9fa=""
-                aria-hidden="true"
-                className="far fa-check"
-              ></span>
-            </div>
-          </div>
-          <div data-v-e858e9fa="" className="caption disagree">
-            비동의
-          </div>
-        </div>
+        <div data-v-e858e9fa="" className="caption agree"></div>
+        <div data-v-e858e9fa="" className="caption disagree"></div>
       </div>
     </div>
   );
