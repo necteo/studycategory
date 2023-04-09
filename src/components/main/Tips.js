@@ -1,3 +1,5 @@
+import "../../css/Tips.css";
+
 const Tips = () => {
   return (
     <section className="tips">
@@ -32,7 +34,7 @@ const Tips = () => {
         />
         <div className="text">
           <div className="title">
-            가능하면 답변 시 '중립'을 선택하지 마십시오.
+            가능하면 답변 시 '보통이다'를 선택하지 마십시오.
           </div>
         </div>
       </div>

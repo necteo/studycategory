@@ -1,7 +1,16 @@
-const Action = ({ pageNum, setPageNum }) => {
+import { useNavigate } from "react-router";
+
+const Action = ({ pageNum, setPageNum, score }) => {
+  const navigate = useNavigate();
+
   const onClickNext = () => {
-    if (pageNum < 5) setPageNum(pageNum + 1);
-    else if (pageNum === 5) return (document.location.href = "/result");
+    if (pageNum < 5) {
+      setPageNum(pageNum + 1);
+      const radios = document.querySelectorAll("input");
+      radios.forEach((radio) => (radio.checked = false));
+    } else if (pageNum === 5) {
+      navigate("/result", { state: { score: { ...score } } });
+    }
   };
 
   return (

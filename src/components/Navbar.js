@@ -1,10 +1,14 @@
 import gosoo_logo from "../logo/gosoo_logo.png";
+import { Link } from "react-router-dom";
+import "../css/Navbar.css";
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="logo">
-        <img src={gosoo_logo} alt="GoSoo Academy" />
+        <Link to="/">
+          <img src={gosoo_logo} alt="GoSoo Academy" />
+        </Link>
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 const RadioGroup = ({ children }) => {
-  return <fieldset>{children}</fieldset>;
+  return <form>{children}</form>;
 };
 
 export default RadioGroup;

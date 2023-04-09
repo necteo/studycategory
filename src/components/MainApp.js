@@ -1,9 +1,18 @@
+import { useState } from "react";
 import Header from "./main/Header";
 import Progress from "./main/Progress";
 import Questions from "./main/Questions";
 import Tips from "./main/Tips";
 
-const MainApp = ({ score, setScore }) => {
+const MainApp = () => {
+  // 유형별 점수
+  const [score, setScore] = useState({
+    interest: 0,
+    positive: 0,
+    organized: 0,
+    macroscopic: 0,
+  });
+
   return (
     <div className="main-wrapper">
       <main className="q-pt">
@@ -13,7 +22,7 @@ const MainApp = ({ score, setScore }) => {
           <div>
             <div data-chunk="quiz-chunk">
               <Progress />
-              <Questions />
+              <Questions score={score} setScore={setScore} />
             </div>
             <div className="modal__container">
               <div id="portal--modal">
