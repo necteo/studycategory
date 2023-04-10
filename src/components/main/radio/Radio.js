@@ -14,14 +14,12 @@ const Radio = ({
     const newScore = { ...score };
     if (!dupCheck["isDup"]) {
       newScore[type] = newScore[type] + value;
-      setScore({ ...newScore });
       setCheckedNum(checkedNum + 1);
-      setDupCheck({ isDup: true, value: value });
     } else {
       newScore[type] = newScore[type] - dupCheck["value"] + value;
-      setScore({ ...newScore });
-      setDupCheck({ isDup: true, value: value });
     }
+    setScore({ ...newScore });
+    setDupCheck({ isDup: true, value: value });
   };
 
   return (

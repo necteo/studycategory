@@ -30,7 +30,7 @@ const Result = () => {
         <div>
           {/* 점수그래프 */}
           {Object.keys(score).map((key) => (
-            <div className="score">
+            <div className="score" key={key}>
               {type[key][0]}
               {((score[key] / maxScore[key]) * 100).toFixed(0)}%
               <div

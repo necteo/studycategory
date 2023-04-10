@@ -1,16 +1,24 @@
 import { useNavigate } from "react-router";
 
-const Action = ({ pageNum, setPageNum, score }) => {
+const Action = ({ checkedNum, pageNum, setPageNum, score }) => {
   const navigate = useNavigate();
+  const maxStmtNum = 38;
 
   const onClickNext = () => {
-    if (pageNum < 5) {
-      setPageNum(pageNum + 1);
-      const radios = document.querySelectorAll("input");
-      radios.forEach((radio) => (radio.checked = false));
-    } else if (pageNum === 5) {
-      navigate("/result", { state: { score: { ...score } } });
+    if (pageNum < 6) {
+      if (checkedNum === pageNum * 6) {
+        setPageNum(pageNum + 1);
+        const radios = document.querySelectorAll("input");
+        radios.forEach((radio) => (radio.checked = false));
+        return;
+      }
+    } else if (pageNum === 6) {
+      if (checkedNum === maxStmtNum) {
+        navigate("/result", { state: { score: { ...score } } });
+        return;
+      }
     }
+    alert("응답하지 않은 문항이 있습니다.");
   };
 
   return (
