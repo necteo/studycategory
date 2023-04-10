@@ -2,6 +2,7 @@ import RadioGroup from "./radio/RadioGroup";
 import Radio from "./radio/Radio";
 import "../../css/Question.css";
 import { useState } from "react";
+import { useEffect } from "react";
 
 const Question = ({
   statement,
@@ -9,8 +10,14 @@ const Question = ({
   setCheckedNum,
   score,
   setScore,
+  pageNum,
 }) => {
+  // 중복 응답 확인
   const [dupCheck, setDupCheck] = useState({ isDup: false, value: 0 });
+  // 질문페이지 넘어가면 초기화
+  useEffect(() => {
+    setDupCheck({ isDup: false, value: 0 });
+  }, [pageNum]);
   // 질문 하나
   const name = "decision";
   // const option = {

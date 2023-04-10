@@ -22,7 +22,6 @@ const Radio = ({
       setScore({ ...newScore });
       setDupCheck({ isDup: true, value: value });
     }
-    console.log(score);
   };
 
   return (

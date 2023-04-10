@@ -17,6 +17,7 @@ const Questions = ({ checkedNum, setCheckedNum, score, setScore }) => {
           setCheckedNum={setCheckedNum}
           score={score}
           setScore={setScore}
+          pageNum={pageNum}
         />
       ))}
       <Action pageNum={pageNum} setPageNum={setPageNum} score={score} />
