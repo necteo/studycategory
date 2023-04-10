@@ -1,20 +1,40 @@
-const Radio = ({ option, value, name, type, score, setScore }) => {
+const Radio = ({
+  option,
+  value,
+  name,
+  type,
+  checkedNum,
+  setCheckedNum,
+  score,
+  setScore,
+  dupCheck,
+  setDupCheck,
+}) => {
   const onChangeHandler = (e) => {
     const newScore = { ...score };
-    newScore[type] = newScore[type] + value;
-    setScore({ ...newScore });
+    if (!dupCheck["isDup"]) {
+      newScore[type] = newScore[type] + value;
+      setScore({ ...newScore });
+      setCheckedNum(checkedNum + 1);
+      setDupCheck({ isDup: true, value: value });
+    } else {
+      newScore[type] = newScore[type] - dupCheck["value"] + value;
+      setScore({ ...newScore });
+      setDupCheck({ isDup: true, value: value });
+    }
     console.log(score);
   };
 
   return (
     <label>
+      {value === 4 ? option : null}
       <input
         type="radio"
         name={name}
         value={value}
         onChange={onChangeHandler}
       />
-      {option}
+      {value === 4 ? null : option}
     </label>
   );
 };

@@ -1,10 +1,13 @@
-const Progress = () => {
+import "../../css/Progress.css";
+
+const Progress = ({ checkedNum }) => {
+  const maxStmtNum = 38;
+  const percentage = ((checkedNum / maxStmtNum) * 100).toFixed(0);
+
   return (
-    <div id="progress-wrapper" className="progress-wrapper initial">
-      <div className="percentage">0</div>
-      <div className="progress-bar">
-        <div className="filler"></div>
-      </div>
+    <div id="progress-wrapper" className="progress-wrapper">
+      <div className="percentage">{percentage}%</div>
+      <div className="progress-bar" style={{ width: percentage + "%" }}></div>
     </div>
   );
 };

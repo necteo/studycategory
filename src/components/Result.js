@@ -1,8 +1,13 @@
 import { useLocation } from "react-router";
+import { useCookies } from "react-cookie";
 import "../css/Result.css";
 
 const Result = () => {
   const location = useLocation();
+  const [cookies, setCookie, removeCookie] = useCookies(["name"]);
+
+  const name = cookies.name;
+  removeCookie("name");
   const score = location.state.score;
   const maxScore = {
     interest: 40,
@@ -20,7 +25,7 @@ const Result = () => {
   // 결과 페이지
   return (
     <div>
-      <h1>결과</h1>
+      <h1>{name}님의 결과</h1>
       <div>
         <div>
           {/* 점수그래프 */}
@@ -46,7 +51,11 @@ const Result = () => {
           ))}
         </div>
       </div>
-      <div>sentences</div>
+      <div className="descriptions">
+        이 유형은 어쩌구 저쩌구
+        <br />
+        이래서 어떻고 저래서 어떻다 등등
+      </div>
     </div>
   );
 };

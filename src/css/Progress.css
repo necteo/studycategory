@@ -1,0 +1,8 @@
+.progress-wrapper {
+  width: 100%;
+}
+
+.progress-bar {
+  background-color: teal;
+  height: 10px;
+}

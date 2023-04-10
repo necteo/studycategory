@@ -3,6 +3,7 @@ import Header from "./main/Header";
 import Progress from "./main/Progress";
 import Questions from "./main/Questions";
 import Tips from "./main/Tips";
+import "../css/MainApp.css";
 
 const MainApp = () => {
   // 유형별 점수
@@ -12,6 +13,7 @@ const MainApp = () => {
     organized: 0,
     macroscopic: 0,
   });
+  const [checkedNum, setCheckedNum] = useState(0);
 
   return (
     <div className="main-wrapper">
@@ -21,8 +23,13 @@ const MainApp = () => {
         <div id="main-app">
           <div>
             <div data-chunk="quiz-chunk">
-              <Progress />
-              <Questions score={score} setScore={setScore} />
+              <Progress checkedNum={checkedNum} />
+              <Questions
+                checkedNum={checkedNum}
+                setCheckedNum={setCheckedNum}
+                score={score}
+                setScore={setScore}
+              />
             </div>
             <div className="modal__container">
               <div id="portal--modal">

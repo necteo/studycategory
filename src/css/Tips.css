@@ -1,3 +1,9 @@
 .tips {
   display: flex;
 }
+
+@media (max-width: 768px) {
+  .tips {
+    flex-direction: column;
+  }
+}
