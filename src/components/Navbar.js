@@ -1,4 +1,4 @@
-import gosoo_logo from "../logo/gosoo_logo.png";
+import gosoo_logo from "../icon/gosoo_logo.png";
 import { Link } from "react-router-dom";
 import "../css/Navbar.css";
 

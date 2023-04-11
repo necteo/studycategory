@@ -20,13 +20,6 @@ const Question = ({
   }, [pageNum]);
   // 질문 하나
   const name = "decision";
-  // const option = {
-  //   agree_max: ["매우 그렇다", 4],
-  //   agree: ["그렇다", 3],
-  //   normal: ["보통이다", 2],
-  //   disagree: ["그렇지 않다", 1],
-  //   disagree_max: ["매우 그렇지 않다", 0],
-  // };
   const options = {
     agree_max: ["그렇다", 4],
     agree: ["", 3],
@@ -45,26 +38,23 @@ const Question = ({
       </div>
       {/* 라디오 버튼 */}
       <RadioGroup>
-        {Object.keys(options).map((key) => (
+        {Object.keys(options).map((key, id) => (
           <Radio
             option={options[key][0]}
             value={options[key][1]}
             name={name}
             type={statement.type}
+            reverse={statement.reverse}
             checkedNum={checkedNum}
             setCheckedNum={setCheckedNum}
             score={score}
             setScore={setScore}
             dupCheck={dupCheck}
             setDupCheck={setDupCheck}
-            key={key}
+            key={id}
           />
         ))}
       </RadioGroup>
-      <div>
-        <div data-v-e858e9fa="" className="caption agree"></div>
-        <div data-v-e858e9fa="" className="caption disagree"></div>
-      </div>
     </div>
   );
 };

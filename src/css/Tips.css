@@ -1,5 +1,19 @@
 .tips {
   display: flex;
+  margin: 30px 10px 0;
+}
+
+.tip {
+  display: flex;
+  align-items: center;
+}
+
+.tip > img {
+  height: 40px;
+}
+
+.tip .text {
+  padding-left: 10px;
 }
 
 @media (max-width: 768px) {

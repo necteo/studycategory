@@ -1,4 +1,7 @@
 import "../../css/Tips.css";
+import stopwatch from "../../icon/stopwatch.png";
+import honest from "../../icon/honest.png";
+import banned from "../../icon/banned.png";
 
 const Tips = () => {
   return (
@@ -8,34 +11,23 @@ const Tips = () => {
       <div className="tip-highlight third"></div>
       <div className="tip">
         <div className="background"></div>
-        <img
-          // src="https://www.16personalities.com/static/images/test-header-1.svg"
-          alt="12"
-        />
+        <img src={stopwatch} alt="12" />
         <div className="text">
-          <div className="title">총 검사 시간은 12분 내외입니다.</div>
+          <div className="title">총 검사 시간은 5분 내외입니다.</div>
         </div>
       </div>
       <div className="tip">
-        <img
-          // src="https://www.16personalities.com/static/images/test-header-2.svg"
-          alt="truely"
-        />
+        <img src={honest} alt="truely" />
         <div className="text">
           <div className="title">
-            혹 질문이 마음에 들지 않더라도 정직하게 답변하십시오.
+            질문이 마음에 들지 않더라도 정직하게 답변해주세요.
           </div>
         </div>
       </div>
       <div className="tip last">
-        <img
-          // src="https://www.16personalities.com/static/images/test-header-3.svg"
-          alt="mid"
-        />
+        <img src={banned} alt="mid" />
         <div className="text">
-          <div className="title">
-            가능하면 답변 시 '보통이다'를 선택하지 마십시오.
-          </div>
+          <div className="title">되도록 답변 시 '중간'을 피해주세요.</div>
         </div>
       </div>
       <div className="shape"></div>

@@ -6,18 +6,23 @@ const Action = ({ checkedNum, pageNum, setPageNum, score }) => {
 
   const onClickNext = () => {
     if (pageNum < 6) {
+      // 마지막 페이지가 아닐 때
       if (checkedNum === pageNum * 6) {
+        // 해당 페이지 문항에 전부 응답하면
         setPageNum(pageNum + 1);
         const radios = document.querySelectorAll("input");
-        radios.forEach((radio) => (radio.checked = false));
+        radios.forEach((radio) => (radio.checked = false)); // 모든 라디오 버튼의 체크 해제
         return;
       }
     } else if (pageNum === 6) {
+      // 마지막 페이지일 떄
       if (checkedNum === maxStmtNum) {
-        navigate("/result", { state: { score: { ...score } } });
+        // 전부 응답하면
+        navigate("/result", { state: { score: { ...score } } }); // 결과 페이지로
         return;
       }
     }
+    // 그 외의 경우
     alert("응답하지 않은 문항이 있습니다.");
   };
 
