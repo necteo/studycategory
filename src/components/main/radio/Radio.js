@@ -1,7 +1,6 @@
 const Radio = ({
   option,
   value,
-  name,
   type,
   reverse,
   checkedNum,
@@ -22,6 +21,7 @@ const Radio = ({
     }
     setScore({ ...newScore });
     setDupCheck({ isDup: true, value: v }); // 중복임을 저장
+    console.log(score);
   };
 
   return (
@@ -29,7 +29,7 @@ const Radio = ({
       {value === 4 ? option : null}
       <input
         type="radio"
-        name={name}
+        name="decision"
         value={reverse ? Math.abs(value - 4) : value} // 질문의 의도가 반대성향일 경우
         onChange={onChangeHandler}
       />

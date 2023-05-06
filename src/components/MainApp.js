@@ -6,13 +6,6 @@ import Tips from "./main/Tips";
 import "../css/MainApp.css";
 
 const MainApp = () => {
-  // 유형별 점수
-  const [score, setScore] = useState({
-    interest: 0,
-    positive: 0,
-    organized: 0,
-    macroscopic: 0,
-  });
   // 응답완료된 문항 개수
   const [checkedNum, setCheckedNum] = useState(0);
 
@@ -28,8 +21,6 @@ const MainApp = () => {
               <Questions
                 checkedNum={checkedNum}
                 setCheckedNum={setCheckedNum}
-                score={score}
-                setScore={setScore}
               />
             </div>
             <div className="modal__container">

@@ -1,28 +1,23 @@
 import { useNavigate } from "react-router";
 
-const Action = ({ checkedNum, pageNum, setPageNum, score }) => {
+const Action = ({ statements, checkedNum, pageNum, setPageNum, score }) => {
   const navigate = useNavigate();
-  const maxStmtNum = 38;
 
   const onClickNext = () => {
-    if (pageNum < 6) {
-      // 마지막 페이지가 아닐 때
-      if (checkedNum === pageNum * 6) {
-        // 해당 페이지 문항에 전부 응답하면
+    if (checkedNum === pageNum * 4) {
+      // 해당 페이지 문항에 전부 응답하면
+      if (pageNum < statements.length) {
+        // 마지막 페이지가 아닐 때
         setPageNum(pageNum + 1);
         const radios = document.querySelectorAll("input");
         radios.forEach((radio) => (radio.checked = false)); // 모든 라디오 버튼의 체크 해제
         return;
-      }
-    } else if (pageNum === 6) {
-      // 마지막 페이지일 떄
-      if (checkedNum === maxStmtNum) {
-        // 전부 응답하면
+      } else if (pageNum === statements.length) {
+        // 마지막 페이지일 떄
         navigate("/result", { state: { score: { ...score } } }); // 결과 페이지로
         return;
       }
     }
-    // 그 외의 경우
     alert("응답하지 않은 문항이 있습니다.");
   };
 
@@ -34,7 +29,7 @@ const Action = ({ checkedNum, pageNum, setPageNum, score }) => {
         onClick={onClickNext}
       >
         <span className="button__text">
-          {pageNum < 5 ? "다음" : "결과확인"}
+          {pageNum < statements.length ? "다음" : "결과확인"}
         </span>
         <span
           data-v-72ca41a0=""

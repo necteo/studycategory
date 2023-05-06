@@ -4,7 +4,13 @@ import Action from "./Action";
 import { useState } from "react";
 import "../../css/Questions.css";
 
-const Questions = ({ checkedNum, setCheckedNum, score, setScore }) => {
+const Questions = ({ checkedNum, setCheckedNum }) => {
+  // 유형별 점수
+  const [score, setScore] = useState({
+    positive: 0,
+    systematic: 0,
+    holistic: 0,
+  });
   // 전체 질문 컴포넌트
   const [pageNum, setPageNum] = useState(1); // 질문 페이지 번호
 
@@ -22,6 +28,7 @@ const Questions = ({ checkedNum, setCheckedNum, score, setScore }) => {
         />
       ))}
       <Action
+        statements={statements.statements}
         checkedNum={checkedNum}
         pageNum={pageNum}
         setPageNum={setPageNum}

@@ -1,52 +1,39 @@
 import { useLocation } from "react-router";
-import { useCookies } from "react-cookie";
 import "../css/Result.css";
 
 const Result = () => {
   const location = useLocation();
-  const [cookies, setCookie, removeCookie] = useCookies(["name"]);
-
-  const name = cookies.name;
-  removeCookie("name");
   const score = location.state.score;
-  const maxScore = {
-    interest: 40,
-    positive: 44,
-    organized: 36,
-    macroscopic: 32,
-  };
   const type = {
-    interest: ["흥미", "무관심"],
     positive: ["긍정적", "부정적"],
-    organized: ["계획적", "즉흥적"],
-    macroscopic: ["거시적", "미시적"],
+    systematic: ["계획적", "즉흥적"],
+    holistic: ["거시적", "미시적"],
   };
+  const maxScore = 40;
 
   // 결과 페이지
   return (
     <div>
-      <h1>{name}님의 결과</h1>
+      <h1>당신의 결과</h1>
       <div>
         <div>
           {/* 점수그래프 */}
           {Object.keys(score).map((key, id) => (
             <div className="score" key={id}>
               {type[key][0]}
-              {((score[key] / maxScore[key]) * 100).toFixed(0)}%
+              {((score[key] / maxScore) * 100).toFixed(0)}%
               <div
                 className="score-graph"
-                style={{ width: (score[key] / maxScore[key]) * 100 }}
+                style={{ width: (score[key] / maxScore) * 100 }}
               />
               <div
                 className="score-graph-another"
                 style={{
-                  width: ((maxScore[key] - score[key]) / maxScore[key]) * 100,
+                  width: ((maxScore - score[key]) / maxScore) * 100,
                 }}
               />
-              {(((maxScore[key] - score[key]) / maxScore[key]) * 100).toFixed(
-                0
-              )}
-              %{type[key][1]}
+              {(((maxScore - score[key]) / maxScore) * 100).toFixed(0)}%
+              {type[key][1]}
             </div>
           ))}
         </div>

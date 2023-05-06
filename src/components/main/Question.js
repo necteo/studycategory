@@ -14,12 +14,12 @@ const Question = ({
 }) => {
   // 중복 응답 확인
   const [dupCheck, setDupCheck] = useState({ isDup: false, value: 0 });
+
   // 질문페이지 넘어가면 초기화
   useEffect(() => {
     setDupCheck({ isDup: false, value: 0 });
   }, [pageNum]);
-  // 질문 하나
-  const name = "decision";
+
   const options = {
     agree_max: ["그렇다", 4],
     agree: ["", 3],
@@ -42,7 +42,6 @@ const Question = ({
           <Radio
             option={options[key][0]}
             value={options[key][1]}
-            name={name}
             type={statement.type}
             reverse={statement.reverse}
             checkedNum={checkedNum}

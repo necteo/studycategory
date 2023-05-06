@@ -1,7 +1,7 @@
 import "../../css/Progress.css";
 
 const Progress = ({ checkedNum }) => {
-  const maxStmtNum = 38;
+  const maxStmtNum = 24;
   const percentage = ((checkedNum / maxStmtNum) * 100).toFixed(0);
 
   return (
