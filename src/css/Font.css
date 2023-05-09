@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Iropke Batang";
+  src: local("IropkeBatangM"),
+    url(../assets/fonts/IropkeBatangM.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Chosun Ilbo Myeongjo";
+  src: local("ChosunNm"), url(../assets/fonts/ChosunNm.ttf) format("truetype");
+}

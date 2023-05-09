@@ -1,7 +1,7 @@
 import "../../css/Tips.css";
-import stopwatch from "../../icon/stopwatch.png";
-import honest from "../../icon/honest.png";
-import banned from "../../icon/banned.png";
+import stopwatch from "../../assets/icon/stopwatch.png";
+import honest from "../../assets/icon/honest.png";
+import banned from "../../assets/icon/banned.png";
 
 const Tips = () => {
   return (
