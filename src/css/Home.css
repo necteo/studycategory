@@ -7,12 +7,14 @@
 .description {
   display: flex;
   margin-top: 150px;
+  margin-bottom: 40px;
   height: 120px;
   flex-direction: row;
 }
 
 .description img {
   height: 100%;
+  margin-left: 140px;
 }
 
 span {
@@ -31,7 +33,7 @@ span {
 }
 
 .mlti .full-name {
-  font-size: 11px;
+  font-size: 9px;
 }
 
 .home .title {
