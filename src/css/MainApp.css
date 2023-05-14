@@ -1,3 +1,20 @@
+.warning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Chosunilbo_myungjo";
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.warning img {
+  height: 40px;
+  width: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
 #main-app {
   margin: 20px auto;
+  width: 88%;
 }

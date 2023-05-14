@@ -3,9 +3,20 @@
   flex-direction: column;
   align-items: center;
   margin: 10px auto;
+  font-size: 14px;
+}
+
+.question::after {
+  display: block;
+  content: "";
+  height: 8px;
+  width: 80%;
+  margin-top: 10px;
+  background-color: #ecedf6;
+  transform: skew(-30deg);
 }
 
 .statement {
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   text-align: center;
 }

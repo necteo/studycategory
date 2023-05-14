@@ -1,8 +1,16 @@
 .progress-wrapper {
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.percentage {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 7px;
 }
 
 .progress-bar {
-  background-color: teal;
-  height: 10px;
+  background-color: #3a4ca8;
+  height: 7px;
+  transform: skew(-30deg);
 }

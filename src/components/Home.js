@@ -14,9 +14,11 @@ const Home = () => {
     <div className="home">
       <div className="description">
         <img src={homeGirl} alt="homeGirl" />
-        <div className="mlti">
-          <span className="short-name">MLTI</span>
-          <span className="full-name">(My Learning Type Indicator)</span>
+        <div className="mlti-wrapper">
+          <div className="mlti">
+            <span className="short-name">MLTI</span>
+            <span className="full-name">(My Learning Type Indicator)</span>
+          </div>
         </div>
       </div>
       <div className="title">나의</div>

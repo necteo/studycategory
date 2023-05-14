@@ -21,14 +21,34 @@ span {
   font-weight: bold;
 }
 
+.mlti-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .mlti {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  height: 55px;
+  width: 145px;
   text-align: center;
+  background-color: #ccd2f0;
+  border-radius: 10px;
+}
+
+.mlti::before {
+  border-top: 15px solid #ccd2f0;
+  border-left: 12px solid transparent;
+  width: 0px;
+  content: "";
+  position: relative;
+  top: 3px;
+  left: -10px;
 }
 
 .mlti .short-name {
+  margin-top: -15px;
   font-size: 20px;
 }
 
@@ -39,7 +59,14 @@ span {
 .home .title {
   font-size: 50px;
   font-weight: bold;
-  border-bottom: 8px solid gainsboro;
+}
+
+.home .title::after {
+  display: block;
+  content: "";
+  height: 8px;
+  background-color: #ecedf6;
+  transform: skew(-30deg);
 }
 
 .home .sub-title {
@@ -49,4 +76,18 @@ span {
 
 button {
   margin-top: 100px;
+  background-color: #ccd2f0;
+  font-family: "Iropke Batang";
+  font-size: 30px;
+  font-weight: bold;
+  min-width: 180px;
+  min-height: 60px;
+  border-radius: 40px;
+  border: 2px solid black;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  button:hover {
+    color: #fff;
+  }
 }

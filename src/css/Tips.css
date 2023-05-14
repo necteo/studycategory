@@ -1,19 +1,15 @@
 .tips {
   display: flex;
-  margin: 30px 10px 0;
+  margin: 10px 10px 0;
+  justify-content: center;
+  text-align: left;
 }
 
-.tip {
-  display: flex;
-  align-items: center;
-}
-
-.tip > img {
-  height: 40px;
-}
-
-.tip .text {
-  padding-left: 10px;
+.tips li {
+  font-family: "Chosunilbo_myungjo";
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 @media (max-width: 768px) {
