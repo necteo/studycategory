@@ -1,5 +1,5 @@
 import Question from "./Question";
-import statements from "../../qt.json";
+import statements from "../../assets/strings/questions.json";
 import Action from "./Action";
 import { useState } from "react";
 import "../../css/Questions.css";

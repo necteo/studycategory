@@ -1,6 +1,7 @@
 .navbar {
   display: flex;
-  height: 40px;
+  margin-top: 10px;
+  height: 25px;
   justify-content: center;
 }
 

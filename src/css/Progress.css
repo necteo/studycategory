@@ -3,7 +3,7 @@
   width: 90%;
 }
 
-.percentage {
+.progress-wrapper .percentage {
   font-size: 13px;
   font-weight: bold;
   margin-bottom: 7px;
