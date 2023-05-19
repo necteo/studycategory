@@ -7,7 +7,9 @@ const Progress = ({ checkedNum }) => {
   return (
     <div id="progress-wrapper" className="progress-wrapper">
       <div className="percentage">{percentage}%</div>
-      <div className="progress-bar" style={{ width: percentage + "%" }}></div>
+      <div className="progress-bar-border">
+        <div className="progress-bar" style={{ width: percentage + "%" }}></div>
+      </div>
     </div>
   );
 };

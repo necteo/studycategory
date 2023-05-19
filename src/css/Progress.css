@@ -4,13 +4,18 @@
 }
 
 .percentage {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   margin-bottom: 7px;
 }
 
-.progress-bar {
-  background-color: #3a4ca8;
+.progress-bar-border {
+  border: 1px solid #3a4ca8;
   height: 7px;
   transform: skew(-30deg);
+}
+
+.progress-bar {
+  background-color: #3a4ca8;
+  height: 100%;
 }

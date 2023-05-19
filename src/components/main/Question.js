@@ -11,6 +11,8 @@ const Question = ({
   score,
   setScore,
   pageNum,
+  goToScroll,
+  id,
 }) => {
   // 중복 응답 확인
   const [dupCheck, setDupCheck] = useState({ isDup: false, value: 0 });
@@ -37,11 +39,12 @@ const Question = ({
         </span>
       </div>
       {/* 라디오 버튼 */}
-      <RadioGroup>
-        {Object.keys(options).map((key, id) => (
+      <RadioGroup id={id}>
+        {Object.keys(options).map((option) => (
           <Radio
-            option={options[key][0]}
-            value={options[key][1]}
+            id={id}
+            option={options[option][0]}
+            value={options[option][1]}
             type={statement.type}
             reverse={statement.reverse}
             checkedNum={checkedNum}
@@ -50,7 +53,8 @@ const Question = ({
             setScore={setScore}
             dupCheck={dupCheck}
             setDupCheck={setDupCheck}
-            key={id}
+            goToScroll={goToScroll}
+            key={option}
           />
         ))}
       </RadioGroup>

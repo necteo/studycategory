@@ -2,21 +2,25 @@
   "statements": [
     [
       {
+        "id": 1,
         "statement": "삶에서 어려운 문제에 부딪혔을 때, 넘어가기보다는 해결을 위해 노력하는 편이다.",
         "type": "positive",
         "reverse": false
       },
       {
+        "id": 2,
         "statement": "영화를 보러갈 때 후기를 보지 않고 즉흥적으로 봤다 실패한 적이 많다.",
         "type": "systematic",
         "reverse": true
       },
       {
+        "id": 3,
         "statement": "흐름을 공부하는 역사나 세계사, 또는 소설이 흥미롭게 느껴진다.",
         "type": "holistic",
         "reverse": false
       },
       {
+        "id": 4,
         "statement": "시험 성적이 좋지 않아도 틀린 문제보다는 맞은 문제에 집중하며 긍정적으로 생각한다.",
         "type": "positive",
         "reverse": true
@@ -24,21 +28,25 @@
     ],
     [
       {
+        "id": 5,
         "statement": "문제집을 풀 때 앞쪽의 쉬운 문제부터 뒤쪽의 어려운 문제까지 차근차근 푸는 편이다.",
         "type": "systematic",
         "reverse": false
       },
       {
+        "id": 6,
         "statement": "드라마는 전체적인 스토리 이해를 위해 무조건 1화부터 보는 편이다.",
         "type": "holistic",
         "reverse": false
       },
       {
+        "id": 7,
         "statement": "나는 지금보다 성적이 오를 수 있다는 자신감이 있다.",
         "type": "positive",
         "reverse": false
       },
       {
+        "id": 8,
         "statement": "문제집을 사면, 언제까지 끝낼지 기한을 정하고 풀기 시작한다.",
         "type": "systematic",
         "reverse": false
@@ -46,21 +54,25 @@
     ],
     [
       {
+        "id": 9,
         "statement": "새로운 것을 배웠을 때, 예전에 배운 것을 기억하고 활용하여 이해할 때가 많다.",
         "type": "holistic",
         "reverse": false
       },
       {
+        "id": 10,
         "statement": "선생님이나 어머니가 나의 성적이나 학습 습관에 조언을 주시는 것이 짜증난다.",
         "type": "positive",
         "reverse": true
       },
       {
+        "id": 11,
         "statement": "하루 공부를 할 때, 어디까지 풀 것인지 계획하기 보다는 할 수 있을 만큼 푼다.",
         "type": "systematic",
         "reverse": true
       },
       {
+        "id": 12,
         "statement": "나의 성적과 학습 습관이 주변 친구들과 가족에게 영향을 준다고 생각한다.",
         "type": "holistic",
         "reverse": false
@@ -68,21 +80,25 @@
     ],
     [
       {
+        "id": 13,
         "statement": "나는 공부를 너무 늦게 시작해서 해도 안될 것 같다.",
         "type": "positive",
         "reverse": true
       },
       {
+        "id": 14,
         "statement": "나는 대학, 나아가 가질 직업까지 장기적인 진로 계획을 세우는 것이 딱히 어렵지 않다.",
         "type": "systematic",
         "reverse": false
       },
       {
+        "id": 15,
         "statement": "친구들과 성적이나 학습 습관을 비교하는 건 머리가 아프다고 생각한다.",
         "type": "holistic",
         "reverse": true
       },
       {
+        "id": 16,
         "statement": "어려운 일이 있을 때, 도전보다는 다른 일을 찾아보는 편이다.",
         "type": "positive",
         "reverse": true
@@ -90,21 +106,25 @@
     ],
     [
       {
+        "id": 17,
         "statement": "나의 목표 성적이나 대학 달성을 위해 효율적인 방법을 자주 고민한다.",
         "type": "systematic",
         "reverse": false
       },
       {
+        "id": 18,
         "statement": "정답지의 풀이를 보면 이해한 것 같은데, 유사한 유형의 문제는 풀기 어렵다.",
         "type": "holistic",
         "reverse": true
       },
       {
+        "id": 19,
         "statement": "친구들을 볼 때 단점보다는 장점이 많이 보인다.",
         "type": "positive",
         "reverse": false
       },
       {
+        "id": 20,
         "statement": "문제를 풀 때 생각하기보다는 우선 식부터 쓰는 편이다.",
         "type": "systematic",
         "reverse": true
@@ -112,21 +132,25 @@
     ],
     [
       {
+        "id": 21,
         "statement": "글의 흐름을 파악하는 영어 지문이나 비문학 지문이 너무나 어렵게 느껴진다.",
         "type": "holistic",
         "reverse": true
       },
       {
+        "id": 22,
         "statement": "나는 잘하는 과목이 하나도 없는 것 같다.",
         "type": "positive",
         "reverse": true
       },
       {
+        "id": 23,
         "statement": "공부를 할 때 과목의 우선순위를 정하는 나만의 기준이 있다. ",
         "type": "systematic",
         "reverse": false
       },
       {
+        "id": 24,
         "statement": "한 번 배운 것은 나중에 또 나올 수 있기에 잊어버리지 않으려고 노력하는 편이다.",
         "type": "holistic",
         "reverse": false

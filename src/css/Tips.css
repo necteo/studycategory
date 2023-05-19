@@ -1,13 +1,13 @@
 .tips {
   display: flex;
-  margin: 10px 10px 0;
+  margin: 0 8px;
   justify-content: center;
   text-align: left;
 }
 
 .tips li {
   font-family: "Chosunilbo_myungjo";
-  font-size: 13px;
+  font-size: 11px;
   font-weight: bold;
   margin-bottom: 5px;
 }

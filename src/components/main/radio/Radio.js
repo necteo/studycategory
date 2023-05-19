@@ -1,4 +1,5 @@
 const Radio = ({
+  id,
   option,
   value,
   type,
@@ -9,7 +10,9 @@ const Radio = ({
   setScore,
   dupCheck,
   setDupCheck,
+  goToScroll,
 }) => {
+  // handler
   const onChangeHandler = (e) => {
     const v = parseInt(e.currentTarget.value);
     const newScore = { ...score };
@@ -21,7 +24,10 @@ const Radio = ({
     }
     setScore({ ...newScore });
     setDupCheck({ isDup: true, value: v }); // 중복임을 저장
-    console.log(score);
+    // console.log(score);
+    // if (id % 4 === 1)
+    // 첫 번째 문항이면
+    goToScroll(id);
   };
 
   return (

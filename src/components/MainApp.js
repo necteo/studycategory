@@ -2,6 +2,7 @@ import { useState } from "react";
 import Progress from "./main/Progress";
 import Questions from "./main/Questions";
 import Tips from "./main/Tips";
+import warning from "../assets/icon/warning.png";
 import "../css/MainApp.css";
 
 const MainApp = () => {
@@ -12,7 +13,7 @@ const MainApp = () => {
     <div className="main-wrapper">
       <main className="q-pt">
         <div className="warning">
-          <img src="https://i.imgur.com/CJwfj0W.png" alt="warning" />
+          <img src={warning} alt="warning" />
           주의사항
         </div>
         <Tips />

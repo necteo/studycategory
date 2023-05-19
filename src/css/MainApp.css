@@ -3,18 +3,17 @@
   flex-direction: column;
   align-items: center;
   font-family: "Chosunilbo_myungjo";
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
 }
 
 .warning img {
-  height: 40px;
-  width: 40px;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  height: 35px;
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 #main-app {
-  margin: 20px auto;
+  margin: 5px auto;
   width: 88%;
 }
