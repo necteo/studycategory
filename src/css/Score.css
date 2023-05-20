@@ -1,0 +1,63 @@
+.score-wrapper {
+  width: 100%;
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  margin-bottom: 25px;
+  font-family: "Chosunilbo_myungjo";
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 0em;
+}
+
+.score .percentage-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.percentage-row .percentage {
+  margin-right: 10px;
+}
+
+.percentage-row .another:not(.score-graph) {
+  margin-right: 0px;
+  margin-left: 10px;
+}
+
+.percentage-row .graph {
+  display: flex;
+}
+
+.graph .score-graph {
+  background-color: #3a4ca8;
+  height: 12px;
+  border-radius: 2px 0px 0px 2px;
+}
+
+.graph .another {
+  background-color: black;
+  border-radius: 0px 2px 2px 0px;
+}
+
+.score .type-row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-width: 360px;
+}
+
+.type-row .type {
+  margin-right: 60px;
+}
+
+.type-row .another {
+  margin-right: 0px;
+  margin-left: 60px;
+}

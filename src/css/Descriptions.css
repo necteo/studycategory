@@ -1,0 +1,18 @@
+.descriptions {
+  margin: 40px 15px 0px 45px;
+  font-family: "Chosunilbo_myungjo";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+}
+
+@media screen and (max-width: 392px) {
+  .descriptions {
+    width: 332px;
+  }
+}
+
+.descriptions .description {
+  margin-bottom: 20px;
+}
