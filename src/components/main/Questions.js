@@ -28,17 +28,19 @@ const Questions = ({ checkedNum, setCheckedNum }) => {
   return (
     <div className="test-questions">
       {statements.statements[pageNum - 1].map((statement) => (
-        <Question
-          id={statement.id}
-          statement={statement}
-          checkedNum={checkedNum}
-          setCheckedNum={setCheckedNum}
-          score={score}
-          setScore={setScore}
-          pageNum={pageNum}
-          goToScroll={goToScroll}
-          key={statement.id}
-        />
+        <div className="question-wrapper" key={statement.id}>
+          <Question
+            id={statement.id}
+            statement={statement}
+            checkedNum={checkedNum}
+            setCheckedNum={setCheckedNum}
+            score={score}
+            setScore={setScore}
+            pageNum={pageNum}
+            goToScroll={goToScroll}
+          />
+          <div className="line"></div>
+        </div>
       ))}
       <Action
         statements={statements.statements}
