@@ -6,20 +6,24 @@ import { useEffect } from "react";
 
 const Question = ({
   statement,
+  type,
   checkedNum,
   setCheckedNum,
   score,
   setScore,
   pageNum,
   goToScroll,
-  id,
 }) => {
   // 중복 응답 확인
-  const [dupCheck, setDupCheck] = useState({ isDup: false, value: 0 });
+  const [dupCheck, setDupCheck] = useState({
+    isDup: false,
+    value: 0,
+    anotherValue: 0,
+  });
 
   // 질문페이지 넘어가면 초기화
   useEffect(() => {
-    setDupCheck({ isDup: false, value: 0 });
+    setDupCheck({ isDup: false, value: 0, anotherValue: 0 });
   }, [pageNum]);
 
   const options = {
@@ -39,14 +43,15 @@ const Question = ({
         </span>
       </div>
       {/* 라디오 버튼 */}
-      <RadioGroup id={id}>
+      <RadioGroup id={statement.id}>
         {Object.keys(options).map((option) => (
           <Radio
-            id={id}
+            id={statement.id}
             option={options[option][0]}
             value={options[option][1]}
-            type={statement.type}
+            type={type}
             reverse={statement.reverse}
+            ratio={statement.ratio}
             checkedNum={checkedNum}
             setCheckedNum={setCheckedNum}
             score={score}

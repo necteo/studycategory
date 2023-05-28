@@ -8,43 +8,43 @@
         "ratio": 2
       },
       {
-        "id": 2,
+        "id": 5,
         "statement": "스스로의 성적을 보면, 희망이 없게 느껴진다.",
         "reverse": true,
         "ratio": 1
       },
       {
-        "id": 3,
+        "id": 9,
         "statement": "나는 지금보다 성적이 오를 것이라는 자신감이 있다.",
         "reverse": false,
         "ratio": 1
       },
       {
-        "id": 4,
+        "id": 13,
         "statement": "선생님이나 부모님이 내 공부 습관에 조언하시는 것이 솔직히 짜증난다.",
         "reverse": true,
         "ratio": 1
       },
       {
-        "id": 5,
+        "id": 17,
         "statement": "나는 공부를 너무 늦게 시작해서 해봤자 안될 것 같다.",
         "reverse": true,
         "ratio": 2
       },
       {
-        "id": 6,
+        "id": 21,
         "statement": "어려운 일이 있을 때, 해결을 하는 것보다 다른 일을 찾는 것이 효율적이라고 생각한다.",
         "reverse": true,
         "ratio": 1
       },
       {
-        "id": 7,
+        "id": 25,
         "statement": "친구들을 볼 때 단점보다는 장점이 많이 보인다.",
         "reverse": false,
         "ratio": 1
       },
       {
-        "id": 8,
+        "id": 29,
         "statement": "나는 잘하는 과목이 하나도 없는 것 같다.",
         "reverse": true,
         "ratio": 1
@@ -52,150 +52,150 @@
     ],
     "systematic": [
       {
-        "id": 9,
+        "id": 2,
         "statement": "계획을 세우지 않고 떠나는 즉흥 여행이 즐거운 것 같다.",
         "reverse": false,
         "ratio": 0.5
       },
       {
-        "id": 10,
+        "id": 6,
         "statement": "문제집을 풀 때 쉬운 문제부터 어려운 문제까지 순서대로 차근차근 푸는 편이다.",
         "reverse": false,
         "ratio": 1
       },
       {
-        "id": 11,
+        "id": 10,
         "statement": "문제집을 사면, 언제까지 끝낼지 기한을 정하고 풀기 시작한다.",
         "reverse": false,
         "ratio": 2
       },
       {
-        "id": 12,
+        "id": 14,
         "statement": "공부하기 전 오늘 할 공부의 최소량을 정해놓고, 넘기려고 노력한다.",
         "reverse": false,
         "ratio": 1
       },
       {
-        "id": 13,
+        "id": 18,
         "statement": "잘하는 친구들과 학습 습관과 태도를 비교해본 적이 있다.",
         "reverse": false,
         "ratio": 2
       },
       {
-        "id": 14,
+        "id": 22,
         "statement": "계획을 세우기보다는, 열심히만 하면 어떻게든 성적이 오를 것이다.",
         "reverse": true,
         "ratio": 1
       },
       {
-        "id": 15,
+        "id": 26,
         "statement": "수학 문제를 풀 때, 어떻게 풀지 생각을 하고 식을 쓰는 편인다.",
         "reverse": false,
         "ratio": 1
       },
       {
-        "id": 16,
+        "id": 30,
         "statement": "미래 계획을 세우고 설계하는 것이 귀찮고 싫다.",
         "reverse": true,
         "ratio": 2
       }
     ],
-    "holistic": [
-      {
-        "id": 17,
-        "statement": "전체의 흐름을 파악하는 역사나 세계사, 소설이 흥미롭게 느껴진다.",
-        "reverse": false,
-        "ratio": 1
-      },
-      {
-        "id": 18,
-        "statement": "드라마는 무조건 1화부터 보는 편이다.",
-        "reverse": false,
-        "ratio": 0.5
-      },
-      {
-        "id": 19,
-        "statement": "새로운 것을 배울 때, 예전에 배운 것을 활용하여 이해할 때가 많다.",
-        "reverse": false,
-        "ratio": 1
-      },
-      {
-        "id": 20,
-        "statement": "나의 성적과 학습 습관이 주변 친구들과 가족들에게 영향을 준다고 생각한다.",
-        "reverse": false,
-        "ratio": 2
-      },
-      {
-        "id": 21,
-        "statement": "성적이 떨어졌을 때, 뭐가 문제인지 모르겠다.",
-        "reverse": true,
-        "ratio": 1
-      },
-      {
-        "id": 22,
-        "statement": "영어 지문이나 비문학 지문을 분석하는 것이 매우 어렵게 느껴진다.",
-        "reverse": true,
-        "ratio": 1
-      },
-      {
-        "id": 23,
-        "statement": "스스로 시간관리를 잘하는 편이라고 생각한다.",
-        "reverse": false,
-        "ratio": 1
-      },
-      {
-        "id": 24,
-        "statement": "단원을 넘어가면 전 단원에서 배운 개념이 기억이 나지 않는 경우가 많다.",
-        "reverse": true,
-        "ratio": 1
-      }
-    ],
     "active": [
       {
-        "id": 25,
+        "id": 3,
         "statement": "공부하다 어려운 문제가 있을 때, 풀이를 찾아보며 직접 이해하려고 노력하는 편이다.",
         "reverse": false,
         "ratio": 2
       },
       {
-        "id": 26,
+        "id": 7,
         "statement": "스스로 시험과 같은 실전에 강한 편이라고 생각한다.",
         "reverse": false,
         "ratio": 1
       },
       {
-        "id": 27,
+        "id": 11,
         "statement": "부모님이나 선생님이 시켜서 억지로 공부한다.",
         "reverse": true,
         "ratio": 1
       },
       {
-        "id": 28,
+        "id": 15,
         "statement": "친구들 사이에서 주도적으로 행동을 해서 내가 하고 싶은대로 모두를 이끄는 편이다.",
         "reverse": false,
         "ratio": 0.5
       },
       {
-        "id": 29,
+        "id": 19,
         "statement": "선생님께서 실수로 숙제를 내주지 않으시면, 몰래 조용히 넘어갈 것 같다.",
         "reverse": true,
         "ratio": 1
       },
       {
-        "id": 30,
+        "id": 23,
         "statement": "학원에 남아서 나머지 공부를 하라고 하면 짜증부터 난다.",
         "reverse": true,
         "ratio": 1
       },
       {
-        "id": 31,
+        "id": 27,
         "statement": "수업이 끝나고 선생님께 따로 질문을 자주 하는 편이다.",
         "reverse": false,
         "ratio": 2
       },
       {
-        "id": 32,
+        "id": 31,
         "statement": "모르는 문제가 있으면, 별표를 치고 넘어간 뒤 다음 문제를 푼다.",
+        "reverse": true,
+        "ratio": 1
+      }
+    ],
+    "holistic": [
+      {
+        "id": 4,
+        "statement": "전체의 흐름을 파악하는 역사나 세계사, 소설이 흥미롭게 느껴진다.",
+        "reverse": false,
+        "ratio": 1
+      },
+      {
+        "id": 8,
+        "statement": "드라마는 무조건 1화부터 보는 편이다.",
+        "reverse": false,
+        "ratio": 0.5
+      },
+      {
+        "id": 12,
+        "statement": "새로운 것을 배울 때, 예전에 배운 것을 활용하여 이해할 때가 많다.",
+        "reverse": false,
+        "ratio": 1
+      },
+      {
+        "id": 16,
+        "statement": "나의 성적과 학습 습관이 주변 친구들과 가족들에게 영향을 준다고 생각한다.",
+        "reverse": false,
+        "ratio": 2
+      },
+      {
+        "id": 20,
+        "statement": "성적이 떨어졌을 때, 뭐가 문제인지 모르겠다.",
+        "reverse": true,
+        "ratio": 1
+      },
+      {
+        "id": 24,
+        "statement": "영어 지문이나 비문학 지문을 분석하는 것이 매우 어렵게 느껴진다.",
+        "reverse": true,
+        "ratio": 1
+      },
+      {
+        "id": 28,
+        "statement": "스스로 시간관리를 잘하는 편이라고 생각한다.",
+        "reverse": false,
+        "ratio": 1
+      },
+      {
+        "id": 32,
+        "statement": "단원을 넘어가면 전 단원에서 배운 개념이 기억이 나지 않는 경우가 많다.",
         "reverse": true,
         "ratio": 1
       }

@@ -3,6 +3,7 @@ import Progress from "./main/Progress";
 import Questions from "./main/Questions";
 import Tips from "./main/Tips";
 import warning from "../assets/icon/warning.png";
+import statements from "../assets/strings/questions.json";
 import "../css/MainApp.css";
 
 const MainApp = () => {
@@ -19,8 +20,15 @@ const MainApp = () => {
         <Tips />
         <div id="main-app">
           <div data-chunk="quiz-chunk">
-            <Progress checkedNum={checkedNum} />
-            <Questions checkedNum={checkedNum} setCheckedNum={setCheckedNum} />
+            <Progress
+              statements={statements.statements}
+              checkedNum={checkedNum}
+            />
+            <Questions
+              statements={statements.statements}
+              checkedNum={checkedNum}
+              setCheckedNum={setCheckedNum}
+            />
           </div>
           <div className="scrollbar-measure"></div>
         </div>

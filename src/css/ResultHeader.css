@@ -1,6 +1,7 @@
 .result .header {
   display: flex;
   flex-direction: column;
+  text-align: center;
   min-width: 239px;
 }
 
@@ -30,6 +31,7 @@
 .result .name {
   font-size: 32px;
   font-weight: bold;
+  white-space: pre-line;
 }
 
 .result .bottom {

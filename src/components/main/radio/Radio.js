@@ -4,6 +4,7 @@ const Radio = ({
   value,
   type,
   reverse,
+  ratio,
   checkedNum,
   setCheckedNum,
   score,
@@ -14,19 +15,21 @@ const Radio = ({
 }) => {
   // handler
   const onChangeHandler = (e) => {
-    const v = parseInt(e.currentTarget.value);
+    const v = parseInt(e.currentTarget.value) * ratio;
+    const anotherV = (4 - parseInt(e.currentTarget.value)) * ratio;
     const newScore = { ...score };
     if (!dupCheck["isDup"]) {
-      newScore[type] = newScore[type] + v;
+      newScore[type]["value"] = newScore[type]["value"] + v;
+      newScore[type]["anotherValue"] =
+        newScore[type]["anotherValue"] + anotherV;
       setCheckedNum(checkedNum + 1); // 체크된 문항 수 + 1
     } else {
-      newScore[type] = newScore[type] - dupCheck["value"] + v; // 중복체크는 이미 더해진 값을 빼고 새로 더함
+      newScore[type]["value"] = newScore[type]["value"] - dupCheck["value"] + v; // 중복체크는 이미 더해진 값을 빼고 새로 더함
+      newScore[type]["anotherValue"] =
+        newScore[type]["anotherValue"] - dupCheck["anotherValue"] + anotherV;
     }
     setScore({ ...newScore });
-    setDupCheck({ isDup: true, value: v }); // 중복임을 저장
-    // console.log(score);
-    // if (id % 4 === 1)
-    // 첫 번째 문항이면
+    setDupCheck({ isDup: true, value: v, anotherValue: anotherV }); // 중복임을 저장
     goToScroll(id);
   };
 
