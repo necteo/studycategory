@@ -1,6 +1,5 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import "../../css/Progress.css";
-import { useState } from "react";
 
 const Progress = ({ statements, checkedNum }) => {
   const [maxStmtNum, setMaxStmtNum] = useState(0);

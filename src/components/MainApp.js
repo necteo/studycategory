@@ -14,7 +14,7 @@ const MainApp = () => {
     <div className="main-wrapper">
       <main className="q-pt">
         <div className="warning">
-          <img src={warning} alt="warning" />
+          <img src={warning} alt="warning" loading="lazy" />
           주의사항
         </div>
         <Tips />

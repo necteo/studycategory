@@ -6,14 +6,19 @@ const ResultHeader = ({ studyType, results }) => {
   return (
     <div className="header">
       <div className="top">
-        <img src={double_quotation_mark} alt='"' />
+        <img src={double_quotation_mark} alt='"' loading="lazy" />
       </div>
       <div className="result-type">
-        <img className="result-type-img" src={result_type_psh} alt="type_psh" />
+        <img
+          className="result-type-img"
+          src={result_type_psh}
+          alt="type_psh"
+          loading="lazy"
+        />
       </div>
       <div className="name">{results.types[studyType]?.name}</div>
       <div className="bottom">
-        <img src={double_quotation_mark} alt='"' />
+        <img src={double_quotation_mark} alt='"' loading="lazy" />
       </div>
     </div>
   );
