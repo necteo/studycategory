@@ -16,3 +16,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    letter-spacing: -0.09em;
+  }
+}

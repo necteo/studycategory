@@ -65,6 +65,7 @@ span {
 .home .title::after {
   display: block;
   content: "";
+  margin-top: -12px;
   height: 8px;
   background-color: #ecedf6;
   transform: skew(-30deg);
