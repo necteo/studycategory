@@ -13,18 +13,15 @@ const Questions = ({ statements, checkedNum, setCheckedNum }) => {
   });
   // 전체 질문 컴포넌트
   const [pageNum, setPageNum] = useState(1); // 질문 페이지 번호
-  const [location, setLocation] = useState(0);
 
   const goToScroll = (id) => {
     // 클릭 시 다음 문항으로 이동
     const newLocation =
-      location +
-      (id % 8 !== 0
+      id % 8 !== 0
         ? document.querySelector("#no" + (id + 1)).offsetTop -
-          document.querySelector("#no" + id).offsetTop
-        : document.querySelector("button").offsetTop);
+          document.querySelector("#no" + (Math.trunc(id / 8) * 8 + 1)).offsetTop
+        : document.querySelector("button").offsetTop;
     window.scrollTo({ top: newLocation, behavior: "smooth" });
-    setLocation(newLocation);
   };
 
   return (
@@ -65,7 +62,6 @@ const Questions = ({ statements, checkedNum, setCheckedNum }) => {
         pageNum={pageNum}
         setPageNum={setPageNum}
         score={score}
-        setLocation={setLocation}
       />
     </div>
   );

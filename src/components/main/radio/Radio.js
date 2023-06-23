@@ -1,6 +1,5 @@
 const Radio = ({
   id,
-  option,
   value,
   type,
   reverse,
@@ -34,16 +33,12 @@ const Radio = ({
   };
 
   return (
-    <label>
-      {value === 4 ? option : null}
-      <input
-        type="radio"
-        name="decision"
-        value={reverse ? Math.abs(value - 4) : value} // 질문의 의도가 반대성향일 경우
-        onChange={onChangeHandler}
-      />
-      {value === 4 ? null : option}
-    </label>
+    <input
+      type="radio"
+      name="decision"
+      value={reverse ? Math.abs(value - 4) : value} // 질문의 의도가 반대성향일 경우
+      onChange={onChangeHandler}
+    />
   );
 };
 

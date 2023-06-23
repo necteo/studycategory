@@ -10,9 +10,3 @@
   font-weight: bold;
   margin-bottom: 5px;
 }
-
-@media (max-width: 768px) {
-  .tips {
-    flex-direction: column;
-  }
-}

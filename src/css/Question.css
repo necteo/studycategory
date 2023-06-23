@@ -9,6 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   margin: 50px auto;
   font-size: 17px;
 }
@@ -24,6 +25,113 @@
 }
 
 .statement {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   text-align: center;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  width: 520px;
+  justify-content: space-evenly;
+}
+
+@media (max-width: 610px) {
+  .radio-group {
+    width: 100%;
+  }
+}
+
+.radio-group span.agree {
+  margin-top: 0.25em;
+  color: #1187cf;
+}
+
+.radio-group span.disagree {
+  margin-top: 0.25em;
+  color: #d94925;
+}
+
+[type="radio"] {
+  vertical-align: middle;
+  appearance: none;
+  border: max(2px, 0.1em) solid gray;
+  border-radius: 50%;
+  width: 2.25em;
+  height: 2.25em;
+  transition: 200ms ease-in-out;
+}
+
+@media (max-width: 310px) {
+  [type="radio"] {
+    width: 1.5em;
+    height: 1.5em;
+  }
+
+  .radio-group span {
+    font-size: 14px;
+  }
+}
+
+[type="radio"]:nth-child(-n + 3) {
+  border-color: #1187cf;
+}
+
+[type="radio"]:nth-last-child(-n + 3) {
+  border-color: #d94925;
+}
+
+[type="radio"]:checked {
+  border-color: gray;
+  background-color: gray;
+}
+
+[type="radio"]:nth-child(-n + 3):checked {
+  border-color: #1187cf;
+  background-color: #1187cf;
+}
+
+[type="radio"]:nth-last-child(-n + 3):checked {
+  border-color: #d94925;
+  background-color: #d94925;
+}
+
+[type="radio"]:focus-visible {
+  outline-offset: max(2px, 0.1em);
+  outline: max(2px, 0.1em) dotted gray;
+}
+
+[type="radio"]:nth-child(-n + 3):focus-visible {
+  outline-color: #1187cf;
+}
+
+[type="radio"]:nth-last-child(-n + 3):focus-visible {
+  outline-color: #d94925;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  [type="radio"]:hover {
+    box-shadow: 0 0 0 max(4px, 0.2em) #c8c8c8;
+    cursor: pointer;
+  }
+
+  [type="radio"]:nth-child(-n + 3):hover {
+    box-shadow: 0 0 0 max(4px, 0.2em) #95d2f7;
+  }
+
+  [type="radio"]:nth-last-child(-n + 3):hover {
+    box-shadow: 0 0 0 max(4px, 0.2em) #efb0a0;
+  }
+}
+
+[type="radio"]:disabled {
+  background-color: lightgray;
+  box-shadow: none;
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+[type="radio"]:disabled + span {
+  opacity: 0.7;
+  cursor: not-allowed;
 }

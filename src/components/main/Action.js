@@ -2,14 +2,7 @@ import { useNavigate } from "react-router";
 import "../../css/Action.css";
 import arrow_right from "../../assets/icon/arrow-right.png";
 
-const Action = ({
-  statements,
-  checkedNum,
-  pageNum,
-  setPageNum,
-  score,
-  setLocation,
-}) => {
+const Action = ({ statements, checkedNum, pageNum, setPageNum, score }) => {
   const navigate = useNavigate();
 
   const onClickNext = () => {
@@ -19,7 +12,6 @@ const Action = ({
         // 마지막 페이지가 아닐 때
         window.scrollTo({ top: 0, behavior: "smooth" }); // 맨 위로 스크롤
         setPageNum(pageNum + 1);
-        setLocation(0);
         const radios = document.querySelectorAll("input");
         radios.forEach((radio) => (radio.checked = false)); // 모든 라디오 버튼의 체크 해제
       } else if (pageNum === Object.keys(statements).length) {
