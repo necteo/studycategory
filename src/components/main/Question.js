@@ -14,6 +14,14 @@ const Question = ({
   pageNum,
   goToScroll,
 }) => {
+  const options = {
+    agree_max: 4,
+    agree: 3,
+    normal: 2,
+    disagree: 1,
+    disagree_max: 0,
+  };
+
   // 중복 응답 확인
   const [dupCheck, setDupCheck] = useState({
     isDup: false,
@@ -26,14 +34,6 @@ const Question = ({
     setDupCheck({ isDup: false, value: 0, anotherValue: 0 });
   }, [pageNum]);
 
-  const options = {
-    agree_max: ["그렇다", 4],
-    agree: ["", 3],
-    normal: ["", 2],
-    disagree: ["", 1],
-    disagree_max: ["아니다", 0],
-  };
-
   return (
     <div data-v-e858e9fa="" className="question">
       {/* 질문 */}
@@ -44,11 +44,11 @@ const Question = ({
       </div>
       {/* 라디오 버튼 */}
       <RadioGroup id={statement.id}>
+        <span className="agree">그렇다</span>
         {Object.keys(options).map((option) => (
           <Radio
             id={statement.id}
-            option={options[option][0]}
-            value={options[option][1]}
+            value={options[option]}
             type={type}
             reverse={statement.reverse}
             ratio={statement.ratio}
@@ -62,6 +62,7 @@ const Question = ({
             key={option}
           />
         ))}
+        <span className="disagree">아니다</span>
       </RadioGroup>
     </div>
   );
