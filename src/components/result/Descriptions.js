@@ -1,11 +1,25 @@
 import "../../css/Descriptions.css";
 
-const Descriptions = ({ studyType, results }) => {
+const Descriptions = ({ studyType, score, maxScore }) => {
   return (
     <div className="descriptions">
-      <div>{studyType}</div>
-      <div className="description">{results.types[studyType]?.description}</div>
-      <div className="ps">{results.types[studyType]?.ps}</div>
+      {results.types[studyType]?.people.map((person) => (
+        <div className="people" key={person}>
+          {person}
+        </div>
+      ))}
+      {Object.keys(results.descriptions).map((type) => (
+        <div className="description" key={type}>
+          {score[type]["value"] === maxScore[type]
+            ? results.descriptions[type][4]
+            : results.descriptions[type][
+                parseInt(
+                  ((score[type]["value"] / maxScore[type]) * 100).toFixed(0) /
+                    20
+                )
+              ]}
+        </div>
+      ))}
     </div>
   );
 };
