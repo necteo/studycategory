@@ -2,7 +2,7 @@ import "../../css/ResultHeader.css";
 import double_quotation_mark from "../../assets/icon/double_quotation_mark.png";
 import result_type_psh from "../../assets/icon/result_type_psh.png";
 
-const ResultHeader = ({ studyType }) => {
+const ResultHeader = ({ studyType, results }) => {
   return (
     <div className="header">
       <div className="top">
@@ -16,7 +16,7 @@ const ResultHeader = ({ studyType }) => {
           loading="lazy"
         />
       </div>
-      <div className="name">{studyType}</div>
+      <div className="name">{results.types[studyType]?.name}</div>
       <div className="bottom">
         <img src={double_quotation_mark} alt='"' loading="lazy" />
       </div>

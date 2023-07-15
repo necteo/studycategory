@@ -52,7 +52,12 @@ const Result = () => {
     <div className="result">
       <ResultHeader studyType={studyType} results={results} />
       <Score score={score} types={types} maxScore={maxScore} />
-      <Descriptions studyType={studyType} results={results} />
+      <Descriptions
+        studyType={studyType}
+        results={results}
+        score={score}
+        maxScore={maxScore}
+      />
     </div>
   );
 };

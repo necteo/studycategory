@@ -1,6 +1,6 @@
 import "../../css/Descriptions.css";
 
-const Descriptions = ({ studyType, score, maxScore }) => {
+const Descriptions = ({ studyType, results, score, maxScore }) => {
   return (
     <div className="descriptions">
       {results.types[studyType]?.people.map((person) => (
