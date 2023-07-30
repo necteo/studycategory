@@ -12,6 +12,34 @@
   }
 }
 
+.descriptions .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  height: 100px;
+}
+
+.top img {
+  height: 15px;
+}
+
+.descriptions .advice {
+  display: flex;
+  justify-content: center;
+}
+
+.descriptions .bottom {
+  display: flex;
+  justify-content: center;
+  margin: 35px auto 50px;
+  transform: rotate(180deg);
+}
+
+.bottom img {
+  height: 15px;
+}
+
 .descriptions .description {
   margin-bottom: 20px;
 }

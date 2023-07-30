@@ -27,9 +27,7 @@ const Action = ({ statements, checkedNum, pageNum, setPageNum, score }) => {
     <div className="action">
       <button type="button" onClick={onClickNext}>
         {pageNum < Object.keys(statements).length ? (
-          <span className="icon-arrow">
-            <img src={arrow_right} alt="arrow_right" />
-          </span>
+          <img src={arrow_right} alt="arrow_right" />
         ) : (
           "결과확인"
         )}

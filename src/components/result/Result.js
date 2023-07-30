@@ -1,7 +1,6 @@
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import ResultHeader from "./ResultHeader";
 import Score from "./Score";
-import Descriptions from "./Descriptions";
 import "../../css/Result.css";
 import results from "../../assets/strings/results.json";
 import { useEffect, useMemo } from "react";
@@ -10,10 +9,14 @@ import { useState } from "react";
 const Result = () => {
   const types = useMemo(() => {
     return {
-      positive: ["긍정적 (Positive)", "부정적 (Negative)"],
-      systematic: ["계획적 (Systematic)", "즉흥적 (Impromptu)"],
-      active: ["능동적 (Active)", "수동적 (Passive)"],
-      holistic: ["거시적 (Holistic)", "미시적 (Detailed)"],
+      positive: ["긍정적 (Positive)", "부정적 (Negative)", "본질, 동기부여"],
+      systematic: [
+        "계획적 (Systematic)",
+        "즉흥적 (Impromptu)",
+        "계획성, 전술적 접근",
+      ],
+      active: ["능동적 (Active)", "수동적 (Passive)", "실행력"],
+      holistic: ["거시적 (Holistic)", "미시적 (Detailed)", "전략적 사고"],
     };
   }, []);
   const maxScore = useMemo(() => {
@@ -47,17 +50,38 @@ const Result = () => {
     console.log(maxScore);
   }, [types, maxScore, score]);
 
+  const navigate = useNavigate();
+
+  const more = () => {
+    navigate("/result/more", {
+      state: {
+        studyType: studyType,
+        score: { ...score },
+        maxScore: maxScore,
+      },
+    });
+  };
+
   // 결과 페이지
   return (
     <div className="result">
       <ResultHeader studyType={studyType} results={results} />
       <Score score={score} types={types} maxScore={maxScore} />
-      <Descriptions
-        studyType={studyType}
-        results={results}
-        score={score}
-        maxScore={maxScore}
-      />
+      <div className="people-wrapper">
+        <h4>유사 유형의 유명인</h4>
+        <div className="people">
+          {results.types[studyType]?.people.map((person) => (
+            <div className="person">
+              <div className="name">{person.name}</div>
+              <div className="tag">{person.tag}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <button onClick={more}>
+        <span>'{studyType}' 유형인 나,</span>
+        <span style={{ fontSize: "12px" }}>성적을 더 올리고 싶다면?</span>
+      </button>
     </div>
   );
 };

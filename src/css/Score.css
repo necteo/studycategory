@@ -37,12 +37,17 @@
 .graph .score-graph {
   background-color: #3a4ca8;
   height: 12px;
-  border-radius: 2px 0px 0px 2px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-radius: 3px 0px 0px 3px;
 }
 
 .graph .another {
-  background-color: black;
-  border-radius: 0px 2px 2px 0px;
+  background-color: #b8e9ff;
+  border-left: 0px;
+  border-right: 1px solid black;
+  border-radius: 0px 3px 3px 0px;
 }
 
 .score .type-row {

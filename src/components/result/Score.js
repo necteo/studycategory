@@ -6,6 +6,7 @@ const Score = ({ score, types, maxScore }) => {
       {/* 점수그래프 */}
       {Object.keys(score).map((type) => (
         <div className="score" key={type}>
+          <div className="type-tag">{types[type][2]}</div>
           <div className="percentage-row">
             <div className="percentage">
               {maxScore[type] === 0
@@ -20,7 +21,7 @@ const Score = ({ score, types, maxScore }) => {
                   width:
                     maxScore[type] === 0
                       ? null
-                      : (score[type]["value"] / maxScore[type]) * 100 * 1.7,
+                      : (score[type]["value"] / maxScore[type]) * 100 * 1.9,
                 }}
               />
               <div
@@ -31,7 +32,7 @@ const Score = ({ score, types, maxScore }) => {
                       ? null
                       : (score[type]["anotherValue"] / maxScore[type]) *
                         100 *
-                        1.7,
+                        1.9,
                 }}
               />
             </div>
