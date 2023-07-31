@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Descriptions from "./components/result/Descriptions";
 import Result from "./components/result/Result";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import firebase from "./firebase";
 
 function App() {
   return (

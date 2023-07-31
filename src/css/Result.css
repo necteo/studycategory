@@ -27,11 +27,23 @@
   margin-right: 0px;
 }
 
+.people .person .face {
+  height: 125px;
+  max-width: 125px;
+  margin-bottom: 10px;
+}
+
+.face .result-person {
+  height: 100%;
+  width: 100%;
+}
+
 .people .person .name {
   font-weight: bold;
 }
 
 .people .person .tag {
+  max-width: 150px;
   font-size: 14px;
 }
 

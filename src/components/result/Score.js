@@ -6,8 +6,12 @@ const Score = ({ score, types, maxScore }) => {
       {/* 점수그래프 */}
       {Object.keys(score).map((type) => (
         <div className="score" key={type}>
-          <div className="type-tag">{types[type][2]}</div>
+          <div className="type-tag">{types[type][4]}</div>
           <div className="percentage-row">
+            <div className="type-row">
+              <div className="type">{types[type][0]}</div>
+              <div className="type english">{types[type][1]}</div>
+            </div>
             <div className="percentage">
               {maxScore[type] === 0
                 ? null
@@ -45,10 +49,10 @@ const Score = ({ score, types, maxScore }) => {
                   ).toFixed(0)}
               %
             </div>
-          </div>
-          <div className="type-row">
-            <div className="type">{types[type][0]}</div>
-            <div className="type another">{types[type][1]}</div>
+            <div className="type-row">
+              <div className="type another">{types[type][2]}</div>
+              <div className="type another english">{types[type][3]}</div>
+            </div>
           </div>
         </div>
       ))}

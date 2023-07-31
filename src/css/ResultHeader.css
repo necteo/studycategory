@@ -9,7 +9,7 @@
 .result .header .result-type {
   display: flex;
   justify-content: center;
-  height: 90px;
+  height: 120px;
 }
 
 .result .header .result-type-img {
@@ -17,13 +17,13 @@
 }
 
 .result .header .tag {
-  font-size: 22px;
+  font-size: 28px;
   white-space: pre-line;
   margin-bottom: -7px;
 }
 
 .result .header .name {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: bold;
   white-space: pre-line;
   margin-bottom: 10px;
